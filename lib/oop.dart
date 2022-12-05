@@ -653,6 +653,105 @@ class _OOPProgrammingState extends State<OOPProgramming> {
                                   image: AssetImage('assets/oop_degisken_completed.PNG'),
                                   fit: BoxFit.fill)),
                         ),
+                        Container(
+                            margin: const EdgeInsets.only(
+                                left: 15, top: 15, right: 15),
+                            alignment: Alignment.center,
+                            child: const Text(
+                              '6',
+                              style: TextStyle(
+                                  fontSize: 18, fontWeight: FontWeight.bold),
+                            )),
+                      ],
+                    )),
+                    Container(
+                    margin: const EdgeInsets.only(bottom: 10),
+                    padding: const EdgeInsets.only(top: 20),
+                    width: double.infinity,
+                    height: MediaQuery.of(context).size.height - 120,
+                    color: Colors.white,
+                    child: Column(
+                      children: [
+                        const SizedBox(
+                          height: 5,
+                        ),
+                        const Center(
+                          child: Text(
+                            'Sınıfların Icerisindeki Methodlar',
+                            style: TextStyle(
+                                color: Colors.red,
+                                fontSize: 16,
+                                fontWeight: FontWeight.w500),
+                          ),
+                        ),
+                        Container(
+                          width: double.infinity,
+                          height: 250,
+                          margin: const EdgeInsets.only(
+                              left: 15, top: 5, right: 15),
+                          //alignment: Alignment.topLeft,
+                          decoration: const BoxDecoration(
+                              // color: Colors.red,
+                              image: DecorationImage(
+                                  image: AssetImage('assets/oop_methods.PNG'),
+                                  fit: BoxFit.fill)),
+                        ),
+                        const Center(
+                          child: Text(
+                            textAlign: TextAlign.center,
+                            'Sınıflardan Nesne Oluşturma Ve Bu Nesne Ile Degerlere Erişme',
+                            style: TextStyle(
+                                color: Colors.red,
+                                fontSize: 16,
+                                fontWeight: FontWeight.w500),
+                          ),
+                        ),
+                        Container(
+                          width: double.infinity,
+                          height: 250,
+                          margin: const EdgeInsets.only(
+                              left: 15, top: 5, right: 15),
+                          //alignment: Alignment.topLeft,
+                          decoration: const BoxDecoration(
+                              // color: Colors.red,
+                              image: DecorationImage(
+                                  image: AssetImage('assets/oop_nesne.PNG'),
+                                  fit: BoxFit.fill)),
+                        ),
+                        Container(
+                            margin: const EdgeInsets.only(
+                                left: 15, top: 30, right: 15),
+                            alignment: Alignment.center,
+                            child: const Text(
+                              '7',
+                              style: TextStyle(
+                                  fontSize: 18, fontWeight: FontWeight.bold),
+                            )),
+                        
+                      ],
+                    )),
+                    Container(
+                    margin: const EdgeInsets.only(bottom: 10),
+                    padding: const EdgeInsets.only(top: 20),
+                    width: double.infinity,
+                    height: MediaQuery.of(context).size.height - 120,
+                    color: Colors.white,
+                    child: Column(
+                      children: [
+                        const SizedBox(
+                          height: 5,
+                        ),
+                        const Center(
+                          child: Text(
+                            'Constructors',
+                            style: TextStyle(
+                                color: Colors.red,
+                                fontSize: 16,
+                                fontWeight: FontWeight.w500),
+                          ),
+                        ),
+                        
+                        
                       ],
                     )),
               ]),
