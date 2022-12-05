@@ -1,0 +1,67 @@
+{
+    "sinif_adi" : "Z-29",
+    "sinif_mevcudu" : 15,
+    "ogretmen_adi" : "Ramazan Emre Akça",
+    "ogrenciler" : [
+        {
+            "ogrenci_adi" : "Beyza",
+            "ogrenci_no" : 1
+        },
+        {
+            "ogrenci_adi" : "Sema",
+            "ogrenci_no" : 2
+        },
+        {
+            "ogrenci_adi" : "Betül",
+            "ogrenci_no" : 3
+        },
+        {
+            "ogrenci_adi" : "Yasin",
+            "ogrenci_no" : 4
+        },
+        {
+            "ogrenci_adi" : "Onur",
+            "ogrenci_no" : 5
+        },
+        {
+            "ogrenci_adi" : "Berkay",
+            "ogrenci_no" : 6
+        },
+        {
+            "ogrenci_adi" : "Kadir",
+            "ogrenci_no" : 7
+        },
+        {
+            "ogrenci_adi" : "Fehmi",
+            "ogrenci_no" : 8
+        },
+        {
+            "ogrenci_adi" : "Hakan",
+            "ogrenci_no" : 9
+        },
+        {
+            "ogrenci_adi" : "Burak",
+            "ogrenci_no" : 10
+        },
+        {
+            "ogrenci_adi" : "Tarkan",
+            "ogrenci_no" : 11
+        },
+        {
+            "ogrenci_adi" : "Ramazan",
+            "ogrenci_no" : 12
+        },
+        {
+            "ogrenci_adi" : "Bengi",
+            "ogrenci_no" : 13
+        },
+        {
+            "ogrenci_adi" : "İmran",
+            "ogrenci_no" : 14
+        },
+        {
+            "ogrenci_adi" : "İrem",
+            "ogrenci_no" : 15
+        }
+    ]
+}

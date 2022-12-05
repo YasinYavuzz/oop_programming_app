@@ -1,5 +1,9 @@
+import 'package:dart_learning_app/ogrenci_provider.dart';
 import 'package:dart_learning_app/oop.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+
+import 'ogrenci_uygulama.dart';
 
 void main(){
   runApp(const MyApp());
@@ -10,9 +14,14 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: DartLearningApp(),
+    return MultiProvider(
+      providers: [
+        ChangeNotifierProvider(create: (context) => OgrenciProvider(),)
+      ],
+      child: const MaterialApp(
+        debugShowCheckedModeBanner: false,
+        home: DartLearningApp(),
+      ),
     );
   }
 }

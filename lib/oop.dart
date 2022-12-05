@@ -1,4 +1,5 @@
 import 'package:dart_learning_app/ogrenci.dart';
+import 'package:dart_learning_app/ogrenci_uygulama.dart';
 import 'package:flutter/material.dart';
 
 class OOPProgramming extends StatefulWidget {
@@ -540,7 +541,7 @@ class _OOPProgrammingState extends State<OOPProgramming> {
                               '1-) Sınıfların nasıl oluşturulduğunu,',
                               style: TextStyle(fontSize: 15),
                             )),
-                            Container(
+                        Container(
                             margin: const EdgeInsets.only(
                                 left: 15, top: 5, right: 15),
                             alignment: Alignment.topLeft,
@@ -548,7 +549,7 @@ class _OOPProgrammingState extends State<OOPProgramming> {
                               '2-) Sınıflar içerisindeki değişkenleri (field, property) oluşturmayı,',
                               style: TextStyle(fontSize: 15),
                             )),
-                            Container(
+                        Container(
                             margin: const EdgeInsets.only(
                                 left: 15, top: 5, right: 15),
                             alignment: Alignment.topLeft,
@@ -556,7 +557,7 @@ class _OOPProgrammingState extends State<OOPProgramming> {
                               '3-) Sınıflar içerisindeki methodları,',
                               style: TextStyle(fontSize: 15),
                             )),
-                            Container(
+                        Container(
                             margin: const EdgeInsets.only(
                                 left: 15, top: 5, right: 15),
                             alignment: Alignment.topLeft,
@@ -564,7 +565,7 @@ class _OOPProgrammingState extends State<OOPProgramming> {
                               '4-) Bu sınıflarda nesne oluşturmayı ve buradaki değişken ve methodları kullanmayı,',
                               style: TextStyle(fontSize: 15),
                             )),
-                            Container(
+                        Container(
                             margin: const EdgeInsets.only(
                                 left: 15, top: 5, right: 15),
                             alignment: Alignment.topLeft,
@@ -572,7 +573,7 @@ class _OOPProgrammingState extends State<OOPProgramming> {
                               "5-) Constructor\'lara değinmeyi,",
                               style: TextStyle(fontSize: 15),
                             )),
-                            Container(
+                        Container(
                             margin: const EdgeInsets.only(
                                 left: 15, top: 5, right: 15),
                             alignment: Alignment.topLeft,
@@ -580,7 +581,7 @@ class _OOPProgrammingState extends State<OOPProgramming> {
                               '6-) Modellere değinmeyi görelim.',
                               style: TextStyle(fontSize: 15),
                             )),
-                            Container(
+                        Container(
                             margin: const EdgeInsets.only(
                                 left: 15, top: 70, right: 15),
                             alignment: Alignment.center,
@@ -591,7 +592,7 @@ class _OOPProgrammingState extends State<OOPProgramming> {
                             )),
                       ],
                     )),
-                    Container(
+                Container(
                     margin: const EdgeInsets.only(bottom: 10),
                     padding: const EdgeInsets.only(top: 20),
                     width: double.infinity,
@@ -631,7 +632,9 @@ class _OOPProgrammingState extends State<OOPProgramming> {
                               "(class) diyerek sınıf oluşturmak istediğimizi belirtiyoruz. class\'tan sonra büyük harf ile Ogrenci diyerek isteğe bağlı sınıf adımızı girmiş oluyoruz.",
                               style: TextStyle(fontSize: 15),
                             )),
-                        const SizedBox(height: 15,),
+                        const SizedBox(
+                          height: 15,
+                        ),
                         const Center(
                           child: Text(
                             'Sınıfların Icerisindeki Degiskenler (field,property)',
@@ -650,7 +653,8 @@ class _OOPProgrammingState extends State<OOPProgramming> {
                           decoration: const BoxDecoration(
                               // color: Colors.red,
                               image: DecorationImage(
-                                  image: AssetImage('assets/oop_degisken_completed.PNG'),
+                                  image: AssetImage(
+                                      'assets/oop_degisken_completed.PNG'),
                                   fit: BoxFit.fill)),
                         ),
                         Container(
@@ -664,7 +668,7 @@ class _OOPProgrammingState extends State<OOPProgramming> {
                             )),
                       ],
                     )),
-                    Container(
+                Container(
                     margin: const EdgeInsets.only(bottom: 10),
                     padding: const EdgeInsets.only(top: 20),
                     width: double.infinity,
@@ -727,10 +731,9 @@ class _OOPProgrammingState extends State<OOPProgramming> {
                               style: TextStyle(
                                   fontSize: 18, fontWeight: FontWeight.bold),
                             )),
-                        
                       ],
                     )),
-                    Container(
+                Container(
                     margin: const EdgeInsets.only(bottom: 10),
                     padding: const EdgeInsets.only(top: 20),
                     width: double.infinity,
@@ -750,8 +753,252 @@ class _OOPProgrammingState extends State<OOPProgramming> {
                                 fontWeight: FontWeight.w500),
                           ),
                         ),
+                        Container(
+                            margin: const EdgeInsets.only(
+                                left: 15, top: 5, right: 15),
+                            alignment: Alignment.topLeft,
+                            child: const Text(
+                              "1-) Yapıcı metod anlamına gelir.",
+                              style: TextStyle(fontSize: 15),
+                            )),
+                        Container(
+                            margin: const EdgeInsets.only(
+                                left: 15, top: 5, right: 15),
+                            alignment: Alignment.topLeft,
+                            child: const Text(
+                              "2-) Sınıf çağrıldığında ilk çalışan metoddur.",
+                              style: TextStyle(fontSize: 15),
+                            )),
+                        Container(
+                            margin: const EdgeInsets.only(
+                                left: 15, top: 5, right: 15),
+                            alignment: Alignment.topLeft,
+                            child: const Text(
+                              "3-) Genelde modellerle birlikte kullanılır.",
+                              style: TextStyle(fontSize: 15),
+                            )),
+                        Container(
+                            margin: const EdgeInsets.only(
+                                left: 15, top: 5, right: 15),
+                            alignment: Alignment.topLeft,
+                            child: const Text(
+                              "4-) Constructor sayesinde boş olarak verilen değerler çağrıldığı yerde buradaki değerleri girmeye zorlayabiliriz.",
+                              style: TextStyle(fontSize: 15),
+                            )),
+                        Container(
+                            margin: const EdgeInsets.only(
+                                left: 15, top: 5, right: 15),
+                            alignment: Alignment.topLeft,
+                            child: const Text(
+                              "5-) Burada değerler modellerden (json, api) dosyalarından gelebilir yada manuel olarak da girilebilir.",
+                              style: TextStyle(fontSize: 15),
+                            )),
+                        const Center(
+                          child: Text(
+                            'Constructor Tanımlama - 1',
+                            style: TextStyle(
+                                color: Colors.red,
+                                fontSize: 16,
+                                fontWeight: FontWeight.w500),
+                          ),
+                        ),
+                        Container(
+                          width: double.infinity,
+                          height: 320,
+                          margin: const EdgeInsets.only(
+                              left: 15, top: 5, right: 15),
+                          //alignment: Alignment.topLeft,
+                          decoration: const BoxDecoration(
+                              // color: Colors.red,
+                              image: DecorationImage(
+                                  image: AssetImage('assets/oop_constructor_1.PNG'),
+                                  fit: BoxFit.fill)),
+                        ),
+                        Container(
+                            margin: const EdgeInsets.only(
+                                left: 15, top: 40, right: 15),
+                            alignment: Alignment.center,
+                            child: const Text(
+                              '8',
+                              style: TextStyle(
+                                  fontSize: 18, fontWeight: FontWeight.bold),
+                            )),
                         
+                      ],
+                    )),
+                    Container(
+                    margin: const EdgeInsets.only(bottom: 10),
+                    padding: const EdgeInsets.only(top: 20),
+                    width: double.infinity,
+                    height: MediaQuery.of(context).size.height - 120,
+                    color: Colors.white,
+                    child: Column(
+                      children: [
+                        const SizedBox(
+                          height: 5,
+                        ),
+                        const Center(
+                          child: Text(
+                            'Constructor Tanımlama - 2',
+                            style: TextStyle(
+                                color: Colors.red,
+                                fontSize: 16,
+                                fontWeight: FontWeight.w500),
+                          ),
+                        ),
                         
+                        Container(
+                          width: double.infinity,
+                          height: 300,
+                          margin: const EdgeInsets.only(
+                              left: 15, top: 5, right: 15),
+                          //alignment: Alignment.topLeft,
+                          decoration: const BoxDecoration(
+                              // color: Colors.red,
+                              image: DecorationImage(
+                                  image: AssetImage('assets/oop_constructor_2.PNG'),
+                                  fit: BoxFit.fill)),
+                        ),
+                        const SizedBox(
+                          height: 5,
+                        ),
+                        const Center(
+                          child: Text(
+                            'Constructor Gövdesi',
+                            style: TextStyle(
+                                color: Colors.red,
+                                fontSize: 16,
+                                fontWeight: FontWeight.w500),
+                          ),
+                        ),
+                        Container(
+                          width: double.infinity,
+                          height: 250,
+                          margin: const EdgeInsets.only(
+                              left: 15, top: 5, right: 15),
+                          //alignment: Alignment.topLeft,
+                          decoration: const BoxDecoration(
+                              // color: Colors.red,
+                              image: DecorationImage(
+                                  image: AssetImage('assets/oop_constructor_govdesi.PNG'),
+                                  fit: BoxFit.fill)),
+                        ),
+
+                        Container(
+                            margin: const EdgeInsets.only(
+                                left: 15, top: 5, right: 15),
+                            alignment: Alignment.center,
+                            child: const Text(
+                              '9',
+                              style: TextStyle(
+                                  fontSize: 18, fontWeight: FontWeight.bold),
+                            )),
+                        
+                      ],
+                    )),
+                    Container(
+                    margin: const EdgeInsets.only(bottom: 10),
+                    padding: const EdgeInsets.only(top: 20),
+                    width: double.infinity,
+                    height: MediaQuery.of(context).size.height - 120,
+                    color: Colors.white,
+                    child: Column(
+                      children: [
+                        const SizedBox(
+                          height: 5,
+                        ),
+                        const Center(
+                          child: Text(
+                            'Modellerle Çalışma',
+                            style: TextStyle(
+                                color: Colors.red,
+                                fontSize: 16,
+                                fontWeight: FontWeight.w500),
+                          ),
+                        ),
+                        Container(
+                            margin: const EdgeInsets.only(
+                                left: 15, top: 5, right: 15),
+                            alignment: Alignment.topLeft,
+                            child: const Text(
+                              "Herhangi bir projede yer alacaksak veya kendi projemizi yazmayı hedefliyorsak en çok çalışacağımız konular apiler olacaktır ve bu apideki bilgileri alıp uygulamalarımıza yerleştirmek istiyorsak modelleri kullanmamız gerekir.",
+                              style: TextStyle(fontSize: 15),
+                            )),
+                          Container(
+                            margin: const EdgeInsets.only(
+                                left: 15, top: 5, right: 15),
+                            alignment: Alignment.topLeft,
+                            child: const Text(
+                              "**Örnek Proje**  : Bu projede localde bulunan json dosyasını okuyup kendi yazdığımız modele aktarıyoruz ve bilgileri ekranda gösteriyoruz.",
+                              style: TextStyle(fontSize: 15),
+                            )),
+                        Container(
+                          width: double.infinity,
+                          height: 400,
+                          margin: const EdgeInsets.only(
+                              left: 15, top: 5, right: 15),
+                          //alignment: Alignment.topLeft,
+                          decoration: const BoxDecoration(
+                              //color: Colors.red,
+                              ),
+                        ),
+                        Container(
+                            margin: const EdgeInsets.only(
+                                left: 15, top: 15, right: 15),
+                            alignment: Alignment.center,
+                            child: const Text(
+                              '10',
+                              style: TextStyle(
+                                  fontSize: 18, fontWeight: FontWeight.bold),
+                            )),
+                        
+                      ],
+                    )),
+                    Container(
+                    margin: const EdgeInsets.only(bottom: 10),
+                    padding: const EdgeInsets.only(top: 20),
+                    width: double.infinity,
+                    height: MediaQuery.of(context).size.height - 120,
+                    color: Colors.white,
+                    child: Column(
+                      children: [
+                        const SizedBox(
+                          height: 5,
+                        ),
+                        const Center(
+                          child: Text(
+                            'Ogrenci Uygulama',
+                            style: TextStyle(
+                                color: Colors.red,
+                                fontSize: 16,
+                                fontWeight: FontWeight.w500),
+                          ),
+                        ),
+                        
+                        Container(
+                          width: 300,
+                          height: 500,
+                          margin:  const EdgeInsets.only(
+                              left: 15, top: 5, right: 15),
+                          //alignment: Alignment.topLeft,
+                          decoration: const BoxDecoration(
+                              //color: Colors.red,
+                              image: DecorationImage(image: AssetImage('assets/ogrenci_uygulama.png'),fit: BoxFit.fill
+                              ),
+                        )),
+                        const SizedBox(height: 5,),
+                        GestureDetector(
+                          onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => const OgrenciUygulama(),)),
+                          child: Container(alignment : Alignment.center,width: 180,height: 50,color: Colors.red,child: const Text('Ogrenci Uygulama',style: TextStyle(color: Colors.white,fontSize: 20),),)),
+                        Container(
+                            margin: const EdgeInsets.only(
+                                left: 15, top: 15, right: 15),
+                            alignment: Alignment.center,
+                            child: const Text(
+                              '10',
+                              style: TextStyle(
+                                  fontSize: 18, fontWeight: FontWeight.bold),
+                            )),
                       ],
                     )),
               ]),
