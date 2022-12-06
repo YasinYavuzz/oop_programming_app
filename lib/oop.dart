@@ -1441,7 +1441,18 @@ class _OOPProgrammingState extends State<OOPProgramming> {
                                   image: AssetImage('assets/kutuphane_1.PNG'),
                                   fit: BoxFit.fill)),
                         ),
-                        
+                        Container(
+                          width: double.infinity,
+                          height: 250,
+                          margin: const EdgeInsets.only(
+                              left: 15, top: 5, right: 15),
+                          //alignment: Alignment.topLeft,
+                          decoration: const BoxDecoration(
+                              // color: Colors.red,
+                              image: DecorationImage(
+                                  image: AssetImage('assets/kutuphane_2.PNG'),
+                                  fit: BoxFit.fill)),
+                        ),
                         Container(
                             margin: const EdgeInsets.only(
                                 left: 15, top: 3, right: 15),
