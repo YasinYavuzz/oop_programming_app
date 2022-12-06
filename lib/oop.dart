@@ -1001,6 +1001,458 @@ class _OOPProgrammingState extends State<OOPProgramming> {
                             )),
                       ],
                     )),
+                    Container(
+                    margin: const EdgeInsets.only(bottom: 10),
+                    padding: const EdgeInsets.only(top: 20),
+                    width: double.infinity,
+                    height: MediaQuery.of(context).size.height - 120,
+                    color: Colors.white,
+                    child: Column(
+                      children: [
+                        const SizedBox(
+                          height: 5,
+                        ),
+                        const Center(
+                          child: Text(
+                            '3.2-) ENCAPSULATION (KAPSULLEME)',
+                            style: TextStyle(
+                                color: Colors.red,
+                                fontSize: 16,
+                                fontWeight: FontWeight.w500),
+                          ),
+                        ),
+                        Container(
+                            margin: const EdgeInsets.only(
+                                left: 15, top: 5, right: 15),
+                            alignment: Alignment.topLeft,
+                            child: const Text(
+                              "Bir sonraki oop yapımız (encapsulation);",
+                              style: TextStyle(fontSize: 15),
+                            )),
+                            Container(
+                            margin: const EdgeInsets.only(
+                                left: 15, top: 5, right: 15),
+                            alignment: Alignment.topLeft,
+                            child: const Text(
+                              "Bir sınıfa ait olan metot veya değişkenlere erişmek ve onlar üzerinde işlem yapmayı sınırlandırmak (istediğimiz gibi işlem yapmasını sağlamak) için kullanılan ve veri güvenliğini sağlayan yöntemdir. (_) koyarak başka sınıflardan direk erişimini istemiyoruz. Bunun yerine yazmış olduğum get ve set metodları ile o değişkeni kontrol altında tutuyorum.",
+                              style: TextStyle(fontSize: 15),
+                            )),
+                        const SizedBox(
+                          height: 15,
+                        ),
+                        Container(
+                          width: double.infinity,
+                          height: 250,
+                          margin: const EdgeInsets.only(
+                              left: 15, top: 5, right: 15),
+                          //alignment: Alignment.topLeft,
+                          decoration: const BoxDecoration(
+                              // color: Colors.red,
+                              image: DecorationImage(
+                                  image: AssetImage('assets/oop_encapsulation.PNG'),
+                                  fit: BoxFit.fill)),
+                        ),
+                        const SizedBox(
+                          height: 130,
+                        ),
+                        Container(
+                            margin: const EdgeInsets.only(
+                                left: 15, top: 15, right: 15),
+                            alignment: Alignment.center,
+                            child: const Text(
+                              '11',
+                              style: TextStyle(
+                                  fontSize: 18, fontWeight: FontWeight.bold),
+                            )),
+                      ],
+                    )),
+                    Container(
+                    margin: const EdgeInsets.only(bottom: 10),
+                    padding: const EdgeInsets.only(top: 20),
+                    width: double.infinity,
+                    height: MediaQuery.of(context).size.height - 120,
+                    color: Colors.white,
+                    child: Column(
+                      children: [
+                        const SizedBox(
+                          height: 5,
+                        ),
+                        const Center(
+                          child: Text(
+                            '3.3-) INHERITANCE (MIRAS)',
+                            style: TextStyle(
+                                color: Colors.red,
+                                fontSize: 16,
+                                fontWeight: FontWeight.w500),
+                          ),
+                        ),
+                        Container(
+                            margin: const EdgeInsets.only(
+                                left: 15, top: 5, right: 15),
+                            alignment: Alignment.topLeft,
+                            child: const Text(
+                              "Programlarımızda bir ana sınıfımız varsa oluşturmuş olduğumuz diğer alt sınıfların ana sınıfımızdaki değişkenlerini ve metodlarını kullanmak istersek (bu şekilde alt sınıflarda tekrar tekrar aynı kodları yazmak zorunda kalmayız ve kod tekrarından kurtuluruz.) inheritance (miras) yapısını kullanmamız gerekir.",
+                              style: TextStyle(fontSize: 15),
+                            )),
+                            
+                        
+                        Container(
+                          width: double.infinity,
+                          height: 450,
+                          margin: const EdgeInsets.only(
+                              left: 15, top: 5, right: 15),
+                          //alignment: Alignment.topLeft,
+                          decoration: const BoxDecoration(
+                              // color: Colors.red,
+                              image: DecorationImage(
+                                  image: AssetImage('assets/oop_inheritance.PNG'),
+                                  fit: BoxFit.fill)),
+                        ),
+                        const SizedBox(
+                          height: 5,
+                        ),
+                        Container(
+                            margin: const EdgeInsets.only(
+                                left: 15, top: 15, right: 15),
+                            alignment: Alignment.center,
+                            child: const Text(
+                              '12',
+                              style: TextStyle(
+                                  fontSize: 18, fontWeight: FontWeight.bold),
+                            )),
+                      ],
+                    )),
+                    Container(
+                    margin: const EdgeInsets.only(bottom: 10),
+                    padding: const EdgeInsets.only(top: 20),
+                    width: double.infinity,
+                    height: MediaQuery.of(context).size.height - 120,
+                    color: Colors.white,
+                    child: Column(
+                      children: [
+                        const SizedBox(
+                          height: 5,
+                        ),
+                        const Center(
+                          child: Text(
+                            '3.4-) POLYMORHISM (COK BICIMLILIK)',
+                            style: TextStyle(
+                                color: Colors.red,
+                                fontSize: 16,
+                                fontWeight: FontWeight.w500),
+                          ),
+                        ),
+                        Container(
+                            margin: const EdgeInsets.only(
+                                left: 15, top: 5, right: 15),
+                            alignment: Alignment.topLeft,
+                            child: const Text(
+                              "Ana sınıfımızda var olan bir özelliğin, alt sınıflarda işlevini güncellemek veya çağırdığımız yerde etkisiz kılmak (o işlevi kendimize göre değiştirmek) için kullanılır.\n @override --> diyerek o işlevi çağırıp güncelleyebiliyoruz.",
+                              style: TextStyle(fontSize: 15),
+                            )),
+                            
+                        
+                        Container(
+                          width: double.infinity,
+                          height: 450,
+                          margin: const EdgeInsets.only(
+                              left: 15, top: 5, right: 15),
+                          //alignment: Alignment.topLeft,
+                          decoration: const BoxDecoration(
+                              // color: Colors.red,
+                              image: DecorationImage(
+                                  image: AssetImage('assets/oop_polymorhism.PNG'),
+                                  fit: BoxFit.fill)),
+                        ),
+                        const SizedBox(
+                          height: 5,
+                        ),
+                        Container(
+                            margin: const EdgeInsets.only(
+                                left: 15, top: 15, right: 15),
+                            alignment: Alignment.center,
+                            child: const Text(
+                              '13',
+                              style: TextStyle(
+                                  fontSize: 18, fontWeight: FontWeight.bold),
+                            )),
+                      ],
+                    )),
+                    Container(
+                    margin: const EdgeInsets.only(bottom: 10),
+                    padding: const EdgeInsets.only(top: 20),
+                    width: double.infinity,
+                    height: MediaQuery.of(context).size.height - 120,
+                    color: Colors.white,
+                    child: Column(
+                      children: [
+                        const SizedBox(
+                          height: 5,
+                        ),
+                        const Center(
+                          child: Text(
+                            '3.5-) ABSTRACT (SOYUTLAMA)',
+                            style: TextStyle(
+                                color: Colors.red,
+                                fontSize: 16,
+                                fontWeight: FontWeight.w500),
+                          ),
+                        ),
+                        Container(
+                            margin: const EdgeInsets.only(
+                                left: 15, top: 5, right: 15),
+                            alignment: Alignment.topLeft,
+                            child: const Text(
+                              "Soyut sınıflar (soyut sınıf denmesinin sebebi bu sınıflardan bir nesne üretilememesidir. Nesne üretilmemesinin sebebi somut sınıflar derleme zamanında, soyut sınıflar ise çalışma zamanında görevlerini yerine getirir ve sonra yok olur.) Soyut sınıfların kullanımlarının amacı birden fazla sınıfımız varsa ve hepsi ortak metodların bir temel sınıf içerisinde tanımlanmasını ve mecburi olarak kullanılmasını sağlar.",
+                              style: TextStyle(fontSize: 15),
+                            )),
+                        Container(
+                          width: double.infinity,
+                          height: 430,
+                          margin: const EdgeInsets.only(
+                              left: 15, top: 5, right: 15),
+                          //alignment: Alignment.topLeft,
+                          decoration: const BoxDecoration(
+                              // color: Colors.red,
+                              image: DecorationImage(
+                                  image: AssetImage('assets/oop_abstract.PNG'),
+                                  fit: BoxFit.fill)),
+                        ),
+                        
+                        Container(
+                            margin: const EdgeInsets.only(
+                                left: 15, top: 3, right: 15),
+                            alignment: Alignment.center,
+                            child: const Text(
+                              '14',
+                              style: TextStyle(
+                                  fontSize: 18, fontWeight: FontWeight.bold),
+                            )),
+                      ],
+                    )),
+                    Container(
+                    margin: const EdgeInsets.only(bottom: 10),
+                    padding: const EdgeInsets.only(top: 20),
+                    width: double.infinity,
+                    height: MediaQuery.of(context).size.height - 120,
+                    color: Colors.white,
+                    child: Column(
+                      children: [
+                        const SizedBox(
+                          height: 5,
+                        ),
+                        const Center(
+                          child: Text(
+                            '3.6-) MIXIN',
+                            style: TextStyle(
+                                color: Colors.red,
+                                fontSize: 16,
+                                fontWeight: FontWeight.w500),
+                          ),
+                        ),
+                        Container(
+                            margin: const EdgeInsets.only(
+                                left: 15, top: 5, right: 15),
+                            alignment: Alignment.topLeft,
+                            child: const Text(
+                              "Biz sadece bir sınıftan miras alabiliriz. Birden fazla sınıftan miras alamıyoruz. Abstract class ile istediğimiz özellikleri implemente edebiliyoruz fakat projeler büyüdüke birden fazla sınıftaki özellikleri kullanmak isteyebiliriz fakat herbirinde bu özellikleri zorunlu kılmak istemeyebiliriz. İşte burada mixin devreye giriyor.",
+                              style: TextStyle(fontSize: 15),
+                            )),
+                        Container(
+                          width: double.infinity,
+                          height: 470,
+                          margin: const EdgeInsets.only(
+                              left: 15, top: 5, right: 15),
+                          //alignment: Alignment.topLeft,
+                          decoration: const BoxDecoration(
+                              // color: Colors.red,
+                              image: DecorationImage(
+                                  image: AssetImage('assets/oop_mixin.PNG'),
+                                  fit: BoxFit.fill)),
+                        ),
+                        
+                        Container(
+                            margin: const EdgeInsets.only(
+                                left: 15, top: 3, right: 15),
+                            alignment: Alignment.center,
+                            child: const Text(
+                              '15',
+                              style: TextStyle(
+                                  fontSize: 18, fontWeight: FontWeight.bold),
+                            )),
+                      ],
+                    )),
+                    Container(
+                    margin: const EdgeInsets.only(bottom: 10),
+                    padding: const EdgeInsets.only(top: 20),
+                    width: double.infinity,
+                    height: MediaQuery.of(context).size.height - 120,
+                    color: Colors.white,
+                    child: Column(
+                      children: [
+                        const SizedBox(
+                          height: 5,
+                        ),
+                        const Center(
+                          child: Text(
+                            '3.7-) GENERIC CLASS (TUR BAGIMSIZLAR)',
+                            style: TextStyle(
+                                color: Colors.red,
+                                fontSize: 16,
+                                fontWeight: FontWeight.w500),
+                          ),
+                        ),
+                        Container(
+                            margin: const EdgeInsets.only(
+                                left: 15, top: 5, right: 15),
+                            alignment: Alignment.topLeft,
+                            child: const Text(
+                              "Yazmış olduğumuz sınıfların, metodların vb. belli bir türe göre değil her türe göre çalışmasını istiyorsak jenerik yapıları kullanabiliriz. String, int, Object her şey birer jenerik tür olabilir. Bu türü ihtiyaca göre belirleriz. Tür belirtmezsek dart dili otomatik olarak türü dynamic olarak belirler. Jenerik yapıları genellikle liste yapılarında zaten kullanıyorduk.",
+                              style: TextStyle(fontSize: 15),
+                            )),
+                        Container(
+                          width: double.infinity,
+                          height: 120,
+                          margin: const EdgeInsets.only(
+                              left: 15, top: 5, right: 15),
+                          //alignment: Alignment.topLeft,
+                          decoration: const BoxDecoration(
+                              // color: Colors.red,
+                              image: DecorationImage(
+                                  image: AssetImage('assets/oop_generic_1.PNG'),
+                                  fit: BoxFit.fill)),
+                        ),
+                        Container(
+                          width: double.infinity,
+                          height: 350,
+                          margin: const EdgeInsets.only(
+                              left: 15, top: 5, right: 15),
+                          //alignment: Alignment.topLeft,
+                          decoration: const BoxDecoration(
+                              // color: Colors.red,
+                              image: DecorationImage(
+                                  image: AssetImage('assets/oop_generic_2.PNG'),
+                                  fit: BoxFit.fill)),
+                        ),
+                        Container(
+                            margin: const EdgeInsets.only(
+                                left: 15, top: 3, right: 15),
+                            alignment: Alignment.center,
+                            child: const Text(
+                              '16',
+                              style: TextStyle(
+                                  fontSize: 18, fontWeight: FontWeight.bold),
+                            )),
+                      ],
+                    )),
+                    Container(
+                    margin: const EdgeInsets.only(bottom: 10),
+                    padding: const EdgeInsets.only(top: 20),
+                    width: double.infinity,
+                    height: MediaQuery.of(context).size.height - 120,
+                    color: Colors.white,
+                    child: Column(
+                      children: [
+                        const SizedBox(
+                          height: 5,
+                        ),
+                        const Center(
+                          child: Text(
+                            'Generic Ekstra Ozellikler',
+                            style: TextStyle(
+                                color: Colors.red,
+                                fontSize: 16,
+                                fontWeight: FontWeight.w500),
+                          ),
+                        ),
+                        Container(
+                          width: double.infinity,
+                          height: 200,
+                          margin: const EdgeInsets.only(
+                              left: 15, top: 5, right: 15),
+                          //alignment: Alignment.topLeft,
+                          decoration: const BoxDecoration(
+                              // color: Colors.red,
+                              image: DecorationImage(
+                                  image: AssetImage('assets/oop_generic_3.PNG'),
+                                  fit: BoxFit.fill)),
+                        ),
+                        Container(
+                          width: double.infinity,
+                          height: 250,
+                          margin: const EdgeInsets.only(
+                              left: 15, top: 5, right: 15),
+                          //alignment: Alignment.topLeft,
+                          decoration: const BoxDecoration(
+                              // color: Colors.red,
+                              image: DecorationImage(
+                                  image: AssetImage('assets/oop_generic_4.PNG'),
+                                  fit: BoxFit.fill)),
+                        ),
+                        const SizedBox(height: 130,),
+                        Container(
+                            margin: const EdgeInsets.only(
+                                left: 15, top: 3, right: 15),
+                            alignment: Alignment.center,
+                            child: const Text(
+                              '17',
+                              style: TextStyle(
+                                  fontSize: 18, fontWeight: FontWeight.bold),
+                            )),
+                      ],
+                    )),
+                    Container(
+                    margin: const EdgeInsets.only(bottom: 10),
+                    padding: const EdgeInsets.only(top: 20),
+                    width: double.infinity,
+                    height: MediaQuery.of(context).size.height - 120,
+                    color: Colors.white,
+                    child: Column(
+                      children: [
+                        const SizedBox(
+                          height: 5,
+                        ),
+                        const Center(
+                          child: Text(
+                            '3.8-) DART LIBRARIES (KUTUPHANE ISLEMLERI)',
+                            style: TextStyle(
+                                color: Colors.red,
+                                fontSize: 16,
+                                fontWeight: FontWeight.w500),
+                          ),
+                        ),
+                        Container(
+                            margin: const EdgeInsets.only(
+                                left: 15, top: 5, right: 15),
+                            alignment: Alignment.topLeft,
+                            child: const Text(
+                              "Projelerimizi oluştururken daha önceden dart geliştiricileri tarafından geliştirilmiş olan kütüphanleri kullanıyoruz. Kendi kütüphanelerimizi oluşturmayı, kütüphaneleri eklemeyi ve bu kütüphaneler üzerindeki işlemleri gerçekleştirmeyi görelim.",
+                              style: TextStyle(fontSize: 15),
+                            )),
+                        Container(
+                          width: double.infinity,
+                          height: 200,
+                          margin: const EdgeInsets.only(
+                              left: 15, top: 5, right: 15),
+                          //alignment: Alignment.topLeft,
+                          decoration: const BoxDecoration(
+                              // color: Colors.red,
+                              image: DecorationImage(
+                                  image: AssetImage('assets/kutuphane_1.PNG'),
+                                  fit: BoxFit.fill)),
+                        ),
+                        
+                        Container(
+                            margin: const EdgeInsets.only(
+                                left: 15, top: 3, right: 15),
+                            alignment: Alignment.center,
+                            child: const Text(
+                              '18',
+                              style: TextStyle(
+                                  fontSize: 18, fontWeight: FontWeight.bold),
+                            )),
+                      ],
+                    )),
               ]),
         ),
       ),
