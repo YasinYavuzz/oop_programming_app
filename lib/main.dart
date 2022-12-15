@@ -1,5 +1,6 @@
 import 'package:dart_learning_app/ogrenci_provider.dart';
 import 'package:dart_learning_app/oop.dart';
+import 'package:dart_learning_app/yapisal_programlama.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -44,13 +45,16 @@ class _DartLearningAppState extends State<DartLearningApp> {
         padding: const EdgeInsets.symmetric(horizontal: 65,vertical: 120),
         itemExtent: 200,
         children: [
-          Container(
-            margin: const EdgeInsets.only(bottom: 10),
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(20),
-              color: Colors.red.shade400
+          GestureDetector(
+            onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => const YapisalProgramlama(),),),
+            child: Container(
+              margin: const EdgeInsets.only(bottom: 10),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(20),
+                color: Colors.red.shade400
+              ),
+              child: const Center(child: Text('Yapısal Programlama',style: TextStyle(color: Colors.white,fontSize: 25),)),
             ),
-            child: const Center(child: Text('Yapısal Programlama',style: TextStyle(color: Colors.white,fontSize: 25),)),
           ),
           GestureDetector(
             onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => const OOPProgramming())),
